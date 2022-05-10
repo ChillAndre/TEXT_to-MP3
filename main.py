@@ -45,7 +45,7 @@ def text_to_mp3(text, file_path, language='en'):
 def main():
     global converse
     form = input('''Choose input format: 'pdf', 'txt', 'rtf' or 'docx': ''')
-    tprint('%s--TO--MP3' % form.upper(), font='bulbhead')
+    tprint('%s--TO--MP3' % form.upper(), font='random')
     file_path = input('''\nEnter a file's path: ''')
     language = input('''Choose language: 'en' or 'ru': ''')
     if form == 'docx' and Path(file_path).suffix == '.docx':
